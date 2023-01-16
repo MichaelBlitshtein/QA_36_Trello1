@@ -13,6 +13,8 @@ public class ApplicationManager {
     WebDriver wd;
 
     HelperUser user;
+    BoardHelper board;
+
 
     public void init(){
         wd = new ChromeDriver();
@@ -21,14 +23,19 @@ public class ApplicationManager {
         wd.navigate().to("https://trello.com/");
 
         user=new HelperUser(wd);
+        board = new BoardHelper(wd);
     }
 
     public void quit(){
-        wd.close();
-        wd.quit();
+        //wd.close();
+       // wd.quit();
     }
 
     public HelperUser getUser() {
         return user;
+    }
+
+    public BoardHelper getBoard() {
+        return board;
     }
 }
