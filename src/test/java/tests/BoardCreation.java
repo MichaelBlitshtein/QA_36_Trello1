@@ -33,5 +33,8 @@ public class BoardCreation extends TestBase{
         app.getBoard().isCreated();
 
         Assert.assertTrue(app.getBoard().isCreated());
+
+        app.getBoard().pause(2000);
+        app.getBoard().returnToHomePage();
     }
 }

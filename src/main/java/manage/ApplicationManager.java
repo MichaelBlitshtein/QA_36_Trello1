@@ -27,8 +27,8 @@ public class ApplicationManager {
     }
 
     public void quit(){
-        //wd.close();
-       // wd.quit();
+     //   wd.close();
+      //  wd.quit();
     }
 
     public HelperUser getUser() {

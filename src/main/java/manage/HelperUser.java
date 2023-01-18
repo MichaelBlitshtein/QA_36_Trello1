@@ -44,7 +44,7 @@ public class HelperUser extends HelperBase{
 
     public void logOut() {
         click(By.cssSelector("[data-testid='header-member-menu-button']"));
-        click(By.cssSelector("[data-testid='header-member-menu-logout']"));
+        click(By.cssSelector("[data-testid='account-menu-logout']"));
         click(By.cssSelector("#logout-submit"));
     }
 }

@@ -18,7 +18,7 @@ public class BoardHelper extends HelperBase{
 
     public void initBoardCreation() {
         click(By.cssSelector("[data-testid='header-create-menu-button']"));
-        click(By.cssSelector("[aria-label='BoardIcon']"));
+        click(By.cssSelector("[data-testid='header-create-board-button']"));
     }
 
     public void fillInBoardCreationForm(Board board){
